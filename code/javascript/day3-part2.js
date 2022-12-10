@@ -2,7 +2,7 @@ const fs = require("fs");
 const characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 // Load data from text file
-fs.readFile("../input/day3.txt", (err, data) => {
+fs.readFile("../../input/day3.txt", (err, data) => {
     if (err) throw err;
 
     let rucksacks = data.toString().split(/\n/);

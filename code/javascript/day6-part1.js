@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 // Load data from text file
-fs.readFile("../input/day6.txt", (err, data) => {
+fs.readFile("../../input/day6.txt", (err, data) => {
     if (err) throw err;
 
     let dataString = data.toString();

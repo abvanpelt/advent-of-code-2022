@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 // Load data from text file
-fs.readFile("../input/day1.txt", (err, data) => {
+fs.readFile("../../input/day1.txt", (err, data) => {
     if (err) throw err;
 
     let allCalories = data.toString().split(/\n/);
@@ -10,7 +10,6 @@ fs.readFile("../input/day1.txt", (err, data) => {
     let currentCalories = 0;
 
     for (const caloriesString of allCalories) {
-        let caloriesString = allCalories[i];
         if (caloriesString === "") {
             // An empty string signifies a break between one elf and the next.
             // Check whether we need to update our current max calories,

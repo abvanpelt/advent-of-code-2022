@@ -17,7 +17,7 @@ const Outcome = {
 };
 
 // Load data from text file
-fs.readFile("../input/day2.txt", (err, data) => {
+fs.readFile("../../input/day2.txt", (err, data) => {
     if (err) throw err;
 
     let rounds = data.toString().split(/\n/);
